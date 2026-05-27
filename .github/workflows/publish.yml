@@ -3,6 +3,9 @@ name: Publish Python distribution
 on:
   release:
     types: [published]
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   publish:
